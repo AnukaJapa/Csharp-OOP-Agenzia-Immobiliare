@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp_OOP_Agenzia_Immobiliare
 {
-    public class Villa : Abitazione
+    public class Villa : Appartamento
     {
         private int dimensioneGiardinoMq;
         public Villa(string indirizzo, string cap, string citta, double superficie, int numeroVani, int numeroBagni, int dimensioneGiardinoMq) : base(indirizzo, cap, citta, superficie, numeroVani, numeroBagni)

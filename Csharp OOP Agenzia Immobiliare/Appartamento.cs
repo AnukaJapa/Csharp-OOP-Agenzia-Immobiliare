@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Csharp_OOP_Agenzia_Immobiliare
 {
-    public class Abitazione : Immobile
+    public class Appartamento : Immobile
     {
         private int numeroVani;
         private int numeroBagni;
 
-        public Abitazione(string indirizzo, string cap, string citta, double superficie, int numeroVani, int numeroBagni) : base(indirizzo, cap, citta, superficie)
+        public Appartamento(string indirizzo, string cap, string citta, double superficie, int numeroVani, int numeroBagni) : base(indirizzo, cap, citta, superficie)
         {
             this.numeroBagni= numeroBagni;
             this.numeroVani= numeroVani;
@@ -34,6 +34,11 @@ namespace Csharp_OOP_Agenzia_Immobiliare
        public void SetNumeroVani(int numeroVani)
         {
             this.numeroVani = numeroVani;
+        }
+
+        public void ConfiguraMQ(int metriQuadri)
+        {
+            base.SetSuperficie(metriQuadri);
         }
 
         //PUBLIC METHODS
